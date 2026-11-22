@@ -58,7 +58,7 @@ The noise real and imaginary components each have half the specified complex noi
 
 Two bits map to one unit-energy Gray-coded complex symbol using `00` $\rightarrow \frac{1+j}{\sqrt{2}}$, `01` $\rightarrow \frac{-1+j}{\sqrt{2}}$, `11` $\rightarrow \frac{-1-j}{\sqrt{2}}$, and `10` $\rightarrow \frac{1-j}{\sqrt{2}}$. The receiver makes nearest-constellation hard decisions. The simulation calculates BER over a configurable $E_b/N_0$ sweep and compares it with the theoretical curve:
 
-$$\mathrm{BER}_{\mathrm{theory}} = \frac{1}{2}\operatorname{erfc}\left(\sqrt{\frac{E_b}{N_0}}\right)$$
+$$\mathrm{BER}_{\mathrm{theory}} = \frac{1}{2}\mathrm{erfc}\left(\sqrt{\frac{E_b}{N_0}}\right)$$
 
 ![Stage 1 simulated and theoretical BER](results/stage1/ber_vs_ebn0.png)
 
