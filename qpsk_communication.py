@@ -181,7 +181,7 @@ def main() -> None:
     recovered = qpsk_demodulate(received)
     total, errors, ber = calculate_ber(bits, recovered)
     sweep_db, simulated_ber = run_ebn0_sweep(ebn0_values, num_bits=num_bits, seed=7)
-    output_dir = Path(__file__).resolve().parent / "results"
+    output_dir = Path(__file__).resolve().parent / "results" / "stage1"
     _save_figures(symbols, received, display_ebn0_db, sweep_db, simulated_ber, output_dir)
     print(f"Single run at {display_ebn0_db:g} dB: {errors}/{total} errors, BER={ber:.6g}")
     print("Eb/N0 (dB) | Simulated BER | Theoretical BER")

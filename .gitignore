@@ -1,4 +1,21 @@
+# Local Python environments and interpreter artifacts
 .venv/
-.matplotlib/
+venv/
 __pycache__/
-tests/__pycache__/
+*.py[cod]
+
+# Test, type-checker, linter, and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Matplotlib cache and local editor/OS files
+.matplotlib/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
